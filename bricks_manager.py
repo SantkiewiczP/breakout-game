@@ -14,11 +14,6 @@ class Brick(Turtle):
         pass
 
     def destroy_brick(self):
-        # when making contact with the ball
-        # if yellow: +1 point
-        # if green: +3 points
-        # if orange: +5 points
-        # if red: +7 points
-        # if no more bricks left: lay the brick again, level 2 begins
 
+        # if no more bricks left: lay the brick again, level 2 begins
         pass
