@@ -27,13 +27,6 @@ class Ball(Turtle):
     def bounce_x(self):
         self.x_move *= -1
 
-    def increment_speed(self):
-        pass
-        # self.speed *= 0.9
-        # after 4 hits
-        # after 12 hits
-        # after making contact with orange row
-        # after making contact with red row
 
 
 
