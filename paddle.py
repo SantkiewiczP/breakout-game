@@ -32,6 +32,4 @@ class Paddle(Turtle):
     def set_position(self):
         self.goto(-20, -270)
 
-    def decrease_size_in_half(self,):
-        self.shapesize(stretch_wid=PADDLE_WIDTH, stretch_len=PADDLE_LENGTH/2)
 
