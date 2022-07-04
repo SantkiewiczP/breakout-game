@@ -2,7 +2,7 @@ from turtle import Turtle
 
 PADDLE_LENGTH = 5
 PADDLE_WIDTH = 1
-DISTANCE = 20
+DISTANCE = 25
 
 
 class Paddle(Turtle):
@@ -18,27 +18,20 @@ class Paddle(Turtle):
     def move_left(self):
         new_x = self.xcor() - DISTANCE
         self.goto(new_x, self.ycor())
-        print(self.position())
         if self.xcor() < -360:
             x_pos, y_pos = self.pos()
-            self.goto(x_pos + 20, y_pos)
-            print(self.position())
+            self.goto(x_pos + DISTANCE, y_pos)
 
     def move_right(self):
         new_x = self.xcor() + DISTANCE
         self.goto(new_x, self.ycor())
-        print(self.position())
         if self.xcor() > 360:
             x_pos, y_pos = self.pos()
-            self.goto(x_pos - 20, y_pos)
-            print(self.position())
+            self.goto(x_pos - DISTANCE, y_pos)
 
     def set_position(self):
         self.goto(-20, -270)
 
-    def decrease_size_in_half(self, paddle_length):
-        self.shapesize(stretch_wid=PADDLE_WIDTH, stretch_len=paddle_length/2)
-        print(self.turtlesize())
-
-
+    def decrease_size_in_half(self,):
+        self.shapesize(stretch_wid=PADDLE_WIDTH, stretch_len=PADDLE_LENGTH/2)
 
